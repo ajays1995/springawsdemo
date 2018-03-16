@@ -20,7 +20,7 @@ public class SpringAwsApplication {
 	@Bean(name="s3Client")
 	public AmazonS3Client getAmazonS3Client()
 	{
-		AWSCredentials credentials = new BasicAWSCredentials("AKIAJ2VIANJ5ITJJCTOQ", "1cUlLQd7LJrqNqPzRifAIHbQ3EucOzSzaSbpwjvZ");
+		AWSCredentials credentials = new BasicAWSCredentials("${access-id}", "${secret-key}");
 
 		return new AmazonS3Client(credentials);
 	}

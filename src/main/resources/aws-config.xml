@@ -10,7 +10,7 @@
 						   http://www.springframework.org/schema/cloud/aws/jdbc/spring-cloud-aws-jdbc-1.0.xsd">
 
   <aws-context:context-credentials>
-     <aws-context:simple-credentials access-key="AKIAJ2VIANJ5ITJJCTOQ" secret-key="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"/>
+     <aws-context:simple-credentials access-key="${access-id}" secret-key="${secret-key}"/>
   </aws-context:context-credentials> 
   
   <aws-context:context-resource-loader/>
